@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon"
+    type="image"
+     href="https://images.unsplash.com/photo-1755544614944-f2e6fcaf785a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8cVBZc0R6dkpPWWN8fGVufDB8fHx8fA%3D%3D"/>
+     <style>
+      form{
+         width: 450px;
+         margin: 1px solid black;
+         margin-left: 20px;
+      }
+      label{
+           display: block;
+            margin-top: 6px;
+      }
+      input,select{
+         display: inline-block;
+         padding: 7px;
+         width: 100%;
+         margin-top: 5px;
+      }
+      h1{
+         text-align: center;
+         color: rebeccapurple;
+         font-weight: 400;
+         font-family: Montserrat;
+      }
+      button{
+         background-color: green;
+         padding: 10px;
+         border-radius: 4px;
+        margin-left: 36%;
+        color: black;
+        width: 150px;
+      }
+      button:hover{
+         color: black;
+         background-color: yellow;
+      }
+      button:active{
+         background-color: blue;
+         color: black;
+      }
+     </style>
+</head>
+<body>
+   <h1>Submit Now</h1>
+   <form >
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter Your Name"
+    id="name" required
+    />
+    <br/>
+    <br/>
+    <label for="email">Email:</label>
+    <input type="text"
+    placeholder="@example.com"
+    id="email" required
+    />
+    <br/>
+    <br/>
+    <label for="password">Password:</label>
+    <input type="password"
+    placeholder="Please Enter Your Password"
+    id="password"
+    required
+    />
+    <br/>
+    <br/>
+    <label>Gender:</label>
+ 
+<select  id="gender">
+<option value="">--Select--
+<option value="Male">Male</option>
+<option value="female">Female</option>
+<option value="Rather not to say">Rather Not To Say</option>
+</option>
+</select>
+<br/>
+<br/>
+<label for="age">Age:</label>
+<input type="number" min="15" max="100" required/>
+<br/>
+<br/>
+<label for="adress">Adress:</label>
+<input type="text" required/>
+<br/>
+<br/>
+<label for="adhar">Adhaar Number:</label>
+<input type="text" required/><br/>
+<br/>
+<label for="postcode">Postcode:</label>
+<input type="text" placeholder="Enter Your District Postcode"/>
+<br/>
+<br/>
+
+<button type="submit">Submit</button>
+
+   </form>
+</body>
+</html>
